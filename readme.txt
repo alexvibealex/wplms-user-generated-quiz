@@ -1,5 +1,5 @@
 === WPLMS User Generated Quiz ===
-Contributors: alexhal
+Contributors: vibethemes,alexhal
 Tags:User generated quiz, WPLMS,Quiz, eLearning, LMS, Learning management system
 Requires at least: 3.6
 Tested up to: 4.7.4
