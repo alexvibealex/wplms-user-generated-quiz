@@ -92,8 +92,13 @@ if(!class_exists('Wplms_Umq'))
                 if($the_query->have_posts()){
                   while ( $the_query->have_posts() ) {
                       $the_query->the_post();
-                      $quiz_questions['ques'][]=get_the_ID();
-                      $quiz_questions['marks'][]=$question->marks;
+                      if(empty($quiz_questions['ques'])){
+                        $quiz_questions['ques'][]=get_the_ID();
+                        $quiz_questions['marks'][]=$question->marks;
+                      }elseif(!in_array(get_the_ID(),$quiz_questions['ques'])){
+                        $quiz_questions['ques'][]=get_the_ID();
+                        $quiz_questions['marks'][]=$question->marks;
+                      }
                   }
                 }
                 wp_reset_postdata();
