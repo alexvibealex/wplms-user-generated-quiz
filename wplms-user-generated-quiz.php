@@ -3,7 +3,7 @@
 Plugin Name: WPLMS User Generated Quiz
 Plugin URI: http://www.Vibethemes.com
 Description: Adds shortcode for mock quiz which user selects tags and creates quiz for himself .
-Version: 1.0
+Version: 1.1
 Author: vibethemes,alexhal
 Author URI: http://www.vibethemes.com
 License: GPL2
